@@ -1,0 +1,149 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,spanish]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{newtxtext,newtxmath}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={$\circ$}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge OSCAR DANIEL ZARCO GONZÁLEZ} \\ \vspace{1pt}
+    \small 
+    \faGithub \ \href{https://github.com/OscarZarcoG/}{github.com/OscarZarcoG} \ $|$ \ 
+    \faPhone \ (729) 142 8946 \ $|$ \ 
+    \faEnvelope \ \href{mailto:oscarzarcogonzalez@outlook.com}{oscarzarcogonzalez@outlook.com} \\
+    \faMapMarker \ Lerma, Estado de México
+\end{center}
+
+\vspace{-5pt}
+
+\section{PERFIL PROFESIONAL}
+\small Desarrollador Fullstack especializado en backend e interfaces modernas. Experiencia en despliegue de microservicios en GCP (Cloud Run), gestión de bases de datos relacionales y NoSQL (MongoDB, CassandraDB) e integración IoT con ESP32. Certificado en IA Aplicada por Anthropic (2025). Enfocado en arquitectura de software eficiente y soluciones escalables.
+
+\section{EXPERIENCIA LABORAL}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+      {Desarrollador Fullstack (Prácticas Profesionales)}{Enero 2026 -- Presente}
+      {SLIDE Co.}{Metepec, Estado de México}
+      \resumeItemListStart
+        \item Desarrollo de +9 endpoints REST con FastAPI integrados a frontend React + Tailwind CSS con gestión de estados.
+        \item Configuración de despliegue de microservicios en GCP Cloud Run con políticas de escalado automático.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Propietario}{Junio 2021 -- Noviembre 2023}
+      {B\&T Autoempleo}{Lerma, Estado de México}
+      \resumeItemListStart
+        \item Gestión integral de negocio propio: control de inventarios, administración financiera y toma de decisiones autónoma.
+      \resumeItemListEnd
+  \end{itemize}
+
+\vspace{-5pt}
+
+\section{PROYECTOS ACADÉMICOS Y PERSONALES}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+      {ASHA — Sistema Monitoreo IoT}{Proyecto Académico}
+      {Node.js, MongoDB, React, Arduino (ESP32)}{}
+      \resumeItemListStart
+        \item Sensores recopilan datos de temperatura, humedad y pH en tiempo real vía módulos ESP32/Wi-Fi a servidor Node.js.
+        \item Implementación de MongoDB para series temporales con TTL automático para optimizar almacenamiento masivo.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MuZapp}{\href{https://muzapp.vercel.app}{muzapp.vercel.app}}
+      {FastAPI, PostgreSQL, Next.js, TypeScript, Tailwind CSS}{}
+      \resumeItemListStart
+        \item Plataforma de gestión de bandas musicales con herramientas de análisis de audio (BPM y tonalidad) en tiempo real.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PoolZapp}{\href{https://poolzapp.vercel.app}{poolzapp.vercel.app}}
+      {Django, Django REST Framework, PostgreSQL, Next.js}{}
+      \resumeItemListStart
+        \item API REST para gestión de billares: control de mesas, reservas en tiempo real y reportes financieros automáticos.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UTVStay}{Proyecto Académico Interno}
+      {Laravel 11, MySQL, Vite}{}
+      \resumeItemListStart
+        \item App web con flujo de aprobación por roles (admin, tutor, alumno) y seguimiento de expedientes académicos.
+      \resumeItemListEnd
+  \end{itemize}
+
+\vspace{-5pt}
+
+\section{EDUCACIÓN}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Ingeniería en Desarrollo y Gestión de Software} \hfill Sep 2024 -- Presente \\
+    Universidad Tecnológica del Valle de Toluca \hfill Lerma, Edo. Mex
+    \vspace{2pt}
+    \item \textbf{T.S.U. en Desarrollo de Software Multiplataforma} \hfill Sep 2022 -- Ago 2024 \\
+    Universidad Tecnológica del Valle de Toluca \hfill Lerma, Edo. Mex
+  \end{itemize}
+
+\vspace{-6pt}
+
+\section{HABILIDADES TÉCNICAS}
+ \small
+ \begin{itemize}[leftmargin=0.15in, label={}]
+   \item \textbf{Lenguajes / DB:} Python, TypeScript, SQL (PostgreSQL, MySQL), NoSQL (MongoDB, CassandraDB), PHP, C\#.
+   \item \textbf{Backend:} FastAPI, Django, DRF, Laravel, .NET Core, Asp.net, Node.js.
+   \item \textbf{Frontend:} Next.js, React, Tailwind CSS, Material UI (MUI).
+   \item \textbf{Cloud / DevOps:} GCP (Cloud Run), Vercel, Git, GitHub, REST APIs, CI/CD, Agile / Scrum.
+   \item \textbf{Idiomas:} Español (Nativo), Inglés (B1).
+ \end{itemize}
+
+\vspace{-12pt}
+
+\section{CERTIFICACIONES}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small \textbf{Anthropic AI (2025):} Subagents, Agent Skills, Claude Cowork, AI Fluency. Especialización en agentes de IA aplicados.
+    \item \small \textbf{Cisco Academy:} CCNAv7 (Routing \& Wireless Essentials), NDG Linux Essentials (2022-2023).
+  \end{itemize}
+
+\end{document}
